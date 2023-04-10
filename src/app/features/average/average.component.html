@@ -1,0 +1,23 @@
+<h1>Edades</h1>
+
+<div>
+	<div>
+		<label style="display: block;" for="EdadUno">Edad 1</label>
+		<input [(ngModel)]="edadUno"  id="EdadUno" type="number" (keyup)="this.makeCalculations()">
+	</div>
+
+	<div>
+		<label style="display: block;" for="EdadDos">Edad 2</label>
+		<input [(ngModel)]="edadDos" id="EdadDos" type="number" (keyup)="this.makeCalculations()">
+	</div>
+
+	<div style="margin-top: 3rem;">
+		<label style="display: block;" for="Suma">Suma</label>
+		<input id="Suma" type="text" [(ngModel)]="sum" readonly>
+	</div>
+
+	<div>
+		<label style="display: block;" for="Promedio">Promedio</label>
+		<input id="Promedio" type="text" [(ngModel)]="average" readonly>
+	</div>
+</div>
