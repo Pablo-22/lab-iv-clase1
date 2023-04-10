@@ -1,23 +1,23 @@
-<h1>Edades</h1>
+<h1 class="title">Edades</h1>
 
-<div>
+<div class="container">
 	<div>
-		<label style="display: block;" for="EdadUno">Edad 1</label>
-		<input [(ngModel)]="edadUno"  id="EdadUno" type="number" (keyup)="this.makeCalculations()">
+		<label class="d-block" for="EdadUno">Edad 1</label>
+		<input [(ngModel)]="edadUno"  id="EdadUno" type="number" (keyup)="this.makeCalculations()" class="input-field">
 	</div>
 
 	<div>
-		<label style="display: block;" for="EdadDos">Edad 2</label>
-		<input [(ngModel)]="edadDos" id="EdadDos" type="number" (keyup)="this.makeCalculations()">
+		<label class="d-block" for="EdadDos">Edad 2</label>
+		<input [(ngModel)]="edadDos" id="EdadDos" type="number" (keyup)="this.makeCalculations()" class="input-field">
 	</div>
 
-	<div style="margin-top: 3rem;">
-		<label style="display: block;" for="Suma">Suma</label>
-		<input id="Suma" type="text" [(ngModel)]="sum" readonly>
+	<div class="result">
+		<label class="d-block" for="Suma">Suma</label>
+		<input id="Suma" type="text" [(ngModel)]="sum" readonly class="result-field">
 	</div>
 
-	<div>
-		<label style="display: block;" for="Promedio">Promedio</label>
-		<input id="Promedio" type="text" [(ngModel)]="average" readonly>
+	<div class="result">
+		<label class="d-block" for="Promedio">Promedio</label>
+		<input id="Promedio" type="text" [(ngModel)]="average" readonly class="result-field">
 	</div>
 </div>

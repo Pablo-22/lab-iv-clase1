@@ -1,0 +1,35 @@
+* {
+	font-family: sans-serif;
+}
+  
+.title {
+	color: #0080ff;
+	margin-bottom: 20px;
+}
+  
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+  
+.input-field {
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 2px solid #a7d3ff;
+	border-radius: 5px;
+}
+  
+.result {
+	margin-top: 1rem;
+}
+  
+.result-field {
+	padding: 5px;
+	border: 2px solid #9acdff;
+	border-radius: 5px;
+}
+  
+.d-block{
+	display: block;
+}
