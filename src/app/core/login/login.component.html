@@ -1,17 +1,16 @@
-<div class="login-container">
-	<h1>Iniciar sesión</h1>
-	<form>
-	  	<div class="form-group">
-			<label for="username">Nombre de usuario</label>
-			<input type="text" id="username" name="username">
-	  	</div>
-		
-	  	<div class="form-group">
-			<label for="password">Contraseña</label>
-			<input type="password" id="password" name="password">
-	  	</div>
+<div class="simple-login-container">
+    <h2 class="mb-4"> {{ this.title }} </h2>
+    <div class="row mb-3">
+		<label class="mb-1">Nombre de usuario</label>
+		<input [(ngModel)]="usernameInput"  type="text" class="form-control" placeholder="Username">
+    </div>
+    <div class="row mb-4">
+		<label class="mb-1" >Contraseña</label>
+		<input [(ngModel)]="passwordInput" type="password" placeholder="Enter your Password" class="form-control">
+    </div>
+    <div class="row mb-4">
+		<button class="btn btn-primary" (click)="this.onSubmit()">{{ this.submitBtn }}</button>
+    </div>
 
-	  	<button type="submit">Ingresar</button>
-	</form>
+	<p class="d-inline">{{ this.footerText }}</p> <a (click)="changeMode()"> {{ this.footerBtn }} </a>
 </div>
-  

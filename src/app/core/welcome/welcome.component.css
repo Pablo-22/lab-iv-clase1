@@ -1,0 +1,6 @@
+.back-img{
+	background-image:  url('../../../assets/img/background.png');
+	height: 70vh;
+	background-position: 50% 95%;
+	padding-top: 15rem;
+}

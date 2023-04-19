@@ -1,9 +1,22 @@
-<div class="flex">
-	<a href="average">Edades</a>
-	<a href="login">Login</a>
-	<a href="welcome">Bienvenido</a>
-	<a href="error">Error</a>
-</div>
+<header class="header">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+	<div class="container-fluid">
+	  <a routerLink="/" class="navbar-brand text-uppercase font-weight-bold">Ejercicios Clase 02</a>
+	  
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+	  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item active"><a routerLink="/" class="nav-link text-uppercase font-weight-bold">Home</a></li>
+        <li class="nav-item"><a routerLink="/average" class="nav-link text-uppercase font-weight-bold">Edades</a></li>
+        <li class="nav-item"><a routerLink="/login" class="nav-link text-uppercase font-weight-bold">Login</a></li>
+		  </ul>
+	  </div>
 
+	</div>
+  </nav>
+</header>
 
 <router-outlet></router-outlet>
